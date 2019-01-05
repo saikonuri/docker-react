@@ -6,4 +6,4 @@ before_install:
   - docker build -t saikonuri/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run saikonuri/docker-react -- --coverage
+  - docker run saikonuri/docker-react npm run test -- --coverage
